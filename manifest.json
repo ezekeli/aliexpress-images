@@ -1,0 +1,18 @@
+
+{
+  "manifest_version": 2,
+  "name": "Aliexpress plugin",
+  "version": "0.1",
+
+  "content_scripts": [{
+    "matches": ["https://ru.aliexpress.com/item/*"],
+    "js": ["content.js"]
+  }],
+
+  "browser_action": {
+    "default_title": "Скачивание изображений"
+  },
+
+  "permissions": ["https://ru.aliexpress.com/item/*"]
+}
+
